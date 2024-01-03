@@ -1,0 +1,80 @@
+.
+{
+	margin:0;
+	padding:0;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	background-color: rgb(7, 100, 100);
+}
+.container
+{
+	position:relative;
+	width:1100px;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding:30px;
+}
+
+.container .mycard
+{
+	position:relative;
+	max-width: :300px;
+	height:150px;
+	background:wheat;
+	margin: 30px 15px;
+	display:flex;
+	flex-direction: :column;
+	box-shadow: 0 3px 50px rgba(0,0,0,0.5);
+	transition:0.4s ease-in-out;
+}
+
+.container .mycard:hover
+{
+	height: 300px;
+
+}
+.container .mycard .cimg
+{
+	position:relative;
+	max-width: :260px;
+	height:200px;
+	top: -60px;
+	left:20px;
+	z-index: 1;
+	box-shadow: 0 3px 50px rgba(0,0,0,0.5);
+}
+
+.container .mycard .cimg img{
+	max-width: :100%;
+	border-radius: 6px;
+	height:100%;
+
+}
+
+.container .mycard .cdetail
+{
+	position: :relative;
+	margin-top: -140px;
+	padding:10px 15px;
+	text-align:center;
+	color:black;
+	font-family:monospace;
+	visibility:hidden;
+	opacity:0;
+	transition: :0.4s ease-in-out;
+}
+
+.container .mycard .cdetail
+{
+	visibility: :visible;
+	opacity:1;
+	margin-top:-50px;
+}
